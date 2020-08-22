@@ -17,25 +17,31 @@ if (is.not.ie()) {
 }
 
 // splides / swipers
-var splide__homePresentation = new Splide('.splide__homePresentation', {
-    type  : 'fade',
-    rewind: true,
-    arrows: true,
-    autoplay: true,
-    pagination: false,
-}).mount();
-var splide__testimonials = new Splide('.splide__testimonials', {
-    type  : 'loop',
-    rewind: true,
-    arrows: false,
-    autoplay: true,
-}).mount();
-var splide__insuranceQuote = new Splide('.splide__insuranceQuote', {
-    arrows: false,
-    autoplay: false,
-    pagination: false,
-    autoHeight: false,
-} ).mount();
+if ($('.splide__homePresentation').length) {
+    var splide__homePresentation = new Splide('.splide__homePresentation', {
+        type  : 'fade',
+        rewind: true,
+        arrows: true,
+        autoplay: true,
+        pagination: false,
+    }).mount();
+}
+if ($('.splide__testimonials').length) {
+    var splide__testimonials = new Splide('.splide__testimonials', {
+        type  : 'loop',
+        rewind: true,
+        arrows: false,
+        autoplay: true,
+    }).mount();
+}
+if ($('.splide__insuranceQuote').length) {
+    var splide__insuranceQuote = new Splide('.splide__insuranceQuote', {
+        arrows: false,
+        autoplay: false,
+        pagination: false,
+        autoHeight: false,
+    } ).mount();
+}
 
 // modal
 if ($('.l-modal').length) {

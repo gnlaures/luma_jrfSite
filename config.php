@@ -2,7 +2,6 @@
 	$http = 'http://';
 	$urllocal = '/luma_JRF_site';
 	$title = 'JRF - Site';
-	include_once('incs/functions.php');
 
 #Retorna a página
 	$URL = str_replace($urllocal, '', $_SERVER['REQUEST_URI']);
@@ -11,24 +10,10 @@
 	$pagina = explode('?', $geturl[1]);
 	$pagina = reset($pagina);
 	$fileSys = 'index.php';
-	
+
 # carrega os estilos/scripts
 	$home = false;
 	$url_site = $http . $_SERVER['SERVER_NAME'] . $urllocal;
-	
-	$css_libraries = 'dist/css/libraries-min.css';
-	$css_homePage = 'dist/css/homePage-min.css';
-	$css_innerPages = 'dist/css/innerPages-min.css';
-	$css_allPages = 'dist/css/allPages-min.css';
-	$js_jquery = 'https://code.jquery.com/jquery-3.3.1.min.js';
-	$js_libraries = 'dist/js/libraries-min.js';
-	$js_homePage = 'dist/js/homePage-min.js';
-	$js_innerPages = 'dist/js/innerPages-min.js';
-	$js_allPages = 'dist/js/allPages-min.js';
-	$js_components = 'dist/js/components-min.js';
-	
-	$load_this_js = array($js_jquery, $js_libraries, $js_components, $js_allPages, $js_innerPages);
-	$load_this_css = array($css_libraries, $css_innerPages);
 	
 	switch ($pagina) {
 		case '' :
@@ -36,8 +21,6 @@
 			$file = 'page_home.php';
 			$title_page = $title;
 			$home = true;
-			$load_this_js = array($js_jquery, $js_libraries, $js_components, $js_allPages, $js_homePage);
-			$load_this_css = array($css_libraries, $css_homePage);
 			break;
 			
 		case 'componentslist':
@@ -49,25 +32,31 @@
 			$file = 'page_institucional.php';
 			$title_page = 'Institucional - '.$title;
 			break;
-		
-		case 'carreiras':
-			$file = 'page_carreiras.php';
-			$title_page = 'Carreiras - '.$title;
+
+		case 'atendimento':
+			$file = 'page_atendimento.php';
+			$title_page = 'Atendimento - '.$title;
 			break;
+
+		case 'acompanhe':
+			$file = 'page_acompanhe.php';
+			$title_page = 'Acompanhe seu seguro - '.$title;
+			break;
+
+		case 'matriz':
+			$file = 'page_matriz.php';
+			$title_page = 'Matriz - '.$title;
+			break;
+
+		case 'servicos':
+			$file = 'page_servicos.php';
+			$title_page = 'Servicçs - '.$title;
+			break;
+
 		
 		case 'contato':
 			$file = 'page_contato.php';
 			$title_page = 'Contato - '.$title;
-			break;
-		
-		case 'termos-de-uso':
-			$file = 'page_termosUso.php';
-			$title_page = 'Termos de Uso - '.$title;
-			break;
-		
-		case 'politica-de-privacidade':
-			$file = 'page_politicaPrivacidade.php';
-			$title_page = 'Política de Privacidade - '.$title;
 			break;
 		
 		default :

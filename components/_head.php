@@ -49,7 +49,8 @@
 	<!-- css files -->
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <?php echoCssFiles($load_this_css); ?>
+	<link href="dist/css/libraries-min.css" type="text/css" rel="stylesheet" />
+	<link href="dist/css/style-min.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>

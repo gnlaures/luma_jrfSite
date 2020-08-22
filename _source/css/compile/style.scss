@@ -1,15 +1,9 @@
 @import "../themes/default";
-
 @import "../partials/mixins";
 @import "../partials/animations";
 @import "../partials/utilities";
 @import "../partials/reset";
-@import "../partials/modules";
 @import "../partials/presets";
 @import "../partials/crossBrowser";
-
-@import "../layout/components";
-@import "../layout/allPages";
-
-@import "../responsive/responsiveComponents";
-@import "../responsive/responsiveAllPages";
+@import "../compile/base";
+@import "../responsive/responsive";

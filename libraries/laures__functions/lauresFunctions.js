@@ -4,8 +4,13 @@ function get__viewportW() {
     return vw;
 }
 function get__navHeight() {
-    hn = document.querySelector('.l-nav').clientHeight;
-    return hn;
+    if ($('.l-nav').length) {
+        hn = document.querySelector('.l-nav').clientHeight;
+        return hn;
+    } else {
+        hn = 0;
+        return hn;
+    }
 }
 function get__page() {
     var fullUrl = window.location.href.split('/').reverse()[0];
@@ -142,22 +147,3 @@ function goToSection__scroll(elScrollDestiny, distanceIfScrollGoingToUp, distanc
 //     var finalDestiny = $(this).attr('href');
 //     goToSection__scroll(finalDestiny, 100, 50, 700, 10);
 // });
-
-
-// position sticky control
-function stickyPosition(stickyElement, initDistance, scrolledDistante) {
-    var el = $(stickyElement);
-    var nav = $('.l-nav');
-    if (nav.hasClass('scrolled')) {
-        if (nav.hasClass('hidden')) {
-            el.css('top', initDistance);
-        } else {
-            el.css('top', scrolledDistante);
-        }
-    } else {
-        el.css('top', initDistance);
-    }
-}
-// Example;
-// $(window).on('scroll', function () {stickyPosition('.u-stickyElement', 0, get__navHeight());});
-// $(window).on('load', function () {stickyPosition('.u-stickyElement', 0, get__navHeight());});
