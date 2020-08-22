@@ -74,5 +74,4 @@
 	<div class="l-nav__followSecure">
 		<a href="#"><strong>Acompanhe</strong> seu seguro</a>
 	</div>
-	<div class="l-nav__maskMenu maskAll"></div>
 </nav>
