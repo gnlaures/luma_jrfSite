@@ -69,7 +69,7 @@
 		<li class="innerPageLink"><a href="#">Empresa</a></li>
 		<li class="innerPageLink"><a href="#">Serviços</a></li>
 		<li class="innerPageLink"><a href="#">O Grupo</a></li>
-		<li class="innerPageLink"><a href="#">Contato</a></li>
+		<li class="innerPageLink"><a href="#contato" class="js-openModal">Contato</a></li>
 	</ul>
 	<div class="l-nav__followSecure">
 		<a href="#"><strong>Acompanhe</strong> seu seguro</a>
