@@ -444,6 +444,33 @@ body {
 		}
 	}
 }
+.s-company {
+	padding: 50px 0;
+	.u-containerBig {
+		min-height: 740px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__intro {
+		@include flexWidth(350px);
+	}
+	&__picture {
+		img {
+			display: block;
+			width: 100%;
+			max-width: 850px;
+		}
+	}
+	h1 {
+		@include titles($tc: $white);
+		margin-bottom: 30px;
+	}
+	p {
+		@include opacity(0.5);
+		@include paragrafos();
+		text-align: justify;
+	}
+}
 
 // #
 #page__home {

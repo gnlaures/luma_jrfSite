@@ -1,4 +1,5 @@
-@mixin paragrafos($tc: $text, $fw: $fwLight, $fs: 18px, $lh: 1.3, $mb: 20px, $mbLOT: 0) {
+@mixin paragrafos($tc: $white, $fw: $fwLight, $fs: 14px, $lh: 1.25, $mb: 20px, $mbLOT: 0) {
+    font-family: $fontFamily__secondary;
     color: $tc;
     font-size: $fs;
     font-weight: $fw;
