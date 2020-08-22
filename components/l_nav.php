@@ -60,7 +60,7 @@
 	</div>
 	<ul class="l-nav__links">
 		<li><a href="#"><strong>Atendimento </strong>24 Horas</a></li>
-		<li><a href="#">Contato</a></li>
+		<li><a href="#contato" class="js-openModal">Contato</a></li>
 	</ul>
 	<div class="l-nav__followSecure">
 		<a href="#"><strong>Acompanhe</strong> seu seguro</a>

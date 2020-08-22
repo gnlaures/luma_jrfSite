@@ -47,7 +47,33 @@ body {
 		background: $white;
 	}
 }
-
+.splide__arrows {
+	display: block;
+	position: relative;
+	width: 91px;
+	height: 42px;
+	.splide__arrow {
+		@include roundedAll(0);
+		@include opacity(1);
+		width: 45px;
+		height: 42px;
+		background: #000;
+		svg {
+			display: block;
+			width: 10px;
+			height: 12px;
+			path {
+				fill: $white;
+			}
+		}
+		&--prev {
+			left: 0;
+		}
+		&--next {
+			right: 0;
+		}
+	}
+}
 
 // l-
 .l-nav {
@@ -187,7 +213,6 @@ body {
 		}
 	}
 }
-
 .l-footer {
 	background: #252529;
 	padding: 50px 0;
@@ -264,18 +289,113 @@ body {
 		}
 	}
 }
+.l-modal__mask {
+	@include u-hideElement;
+	@include transition();
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background: rgba(0,0,0,0.8);
+	&.is-active {
+		@include u-showElement;
+	}
+}
+.l-modal {
+	@include transforms(translateX(-50%) translateY(-50%), center);
+	@include scroll();
+	@include u-hideElement;
+	@include transition();
+	overflow: auto;
+	display: block;
+	width: 100%;
+	max-width: 510px;
+	max-height: 80vh;
+	padding: 60px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 21;
+	background: $white;
+	&.is-active {
+		@include u-showElement;
+	}
+	&__close {
+		@include transition();
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		display: block;
+		width: 20px;
+		height: 20px;
+		padding: 5px;
+		cursor: pointer;
+		&:hover {
+			background: $mutedGray;
+		}
+		img {
+			display: block;
+			width: 10px;
+			height: 10px;
+		}
+	}
+	&__content {
+		h2 {
+			@include titles;
+		}
+		p {
+			@include smallUppercaseTexts()
+		}
+		.c-simpleForm {
+			margin-top: 35px;
+		}
+	}
+}
+.l-modal__contact {
+	.c-infosContato {
+		padding: 35px 0;
+		li {
+			&:first-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.l-modal__insuranceQuote {
+	.splide__insuranceQuote {
+		.splide__slide {
+			@include transition($duration: 500ms);
+			overflow: hidden;
+			max-height: 0;
+			&.is-active {
+				max-height: 1200px;
+			}
+		}
+	}
+}
 
 // s-
 .s-homePresentation {
 	display: block;
+	.u-containerBig {
+		max-width: 1340px;
+	}
 	.c-callSimulation {
 		position: absolute;
 		top: 260px;
-		right: 150px;
+		right: 50px;
 	}
 	.splide__homePresentation {
 		position: relative;
 		left: 70px;
+		.splide__arrows {
+			position: absolute;
+			top: 540px;
+			right: 326px;
+		}
 	}
 	.splide__testimonials {
 		position: relative;

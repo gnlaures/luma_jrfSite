@@ -30,3 +30,24 @@
         }
     }
 }
+
+@mixin titles($tc: $black, $fs: 26px) {
+    display: block;
+    width: 100%;
+    color: $tc;
+    text-transform: uppercase;
+    font-size: $fs;
+    font-weight: $fwLight;
+    margin-bottom: 10px;
+    strong {
+        font-weight: $fwMedium;
+    }
+}
+
+@mixin smallUppercaseTexts($tc: $black, $fs: 11px) {
+    @include letterSpacing(50);
+    display: block;
+    color: $tc;
+    font-size: $fs;
+    text-transform: uppercase;
+}

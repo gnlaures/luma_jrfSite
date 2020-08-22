@@ -60,17 +60,43 @@
 }
 .c-simpleForm {
     display: block;
+    fieldset {
+        display: block;
+        margin-bottom: 15px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    div.fieldsetFlex {
+        display: flex;
+        flex-direction: row;
+        legend {
+            @include flexWidth(100px);
+            @include smallUppercaseTexts();
+            text-align: right;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            background: #e0e0e0;
+            padding: 15px;
+        }
+        ul {
+            flex: 1 1 auto;
+            padding-left: 15px;
+        }
+    }
     ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        @include calcWidthForPositionNegative(-15px);
+        @include calcWidthForPositionNegative(-2px);
     }
     li {
         position: relative;
         display: block;
-        padding: 15px;
+        padding: 2px;
     }
     li.liBtn {
         display: flex;
@@ -156,6 +182,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
             flex-wrap: nowrap;
             margin-bottom: 10px;
             &:last-of-type {
@@ -165,23 +192,79 @@
                 cursor: pointer;
             }
             label {
-                @include paragrafos();
-                text-transform: none;
+                @include smallUppercaseTexts();
                 order: 2;
                 padding-left: 10px;
                 margin-bottom: 0;
             }
             input {
-                @include roundedAll(4px);
-                @include flexWidth(24px);
+                @include flexWidth(12px);
                 display: block;
                 padding: 0;
-                height: 24px;
+                height: 14px;
                 &:checked {
                     background: url(#{$media_icons}/icon_checked.svg);
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
+                    border-color: $primary;
+                }
+            }
+        }
+        &.--only1Option {
+            div {
+                height: 100%;
+                label {
+                    flex: 0 1 auto;
+                    width: auto;
+                }
+            }
+        }
+        &.--giant {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0;
+            div {
+                position: relative;
+                width: 105px;
+                height: 72px;
+                margin-right: 2px;
+                margin-bottom: 0;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                display: block;
+                @include flexWidth(100%);
+                height: 100%;
+                background: transparent;
+                &:checked {
+                    background: #e0e0e0;
+                }
+            }
+            label {
+                position: relative;
+                z-index: 2;
+                padding-left: 0;
+                img {
+                    display: block;
+                    width: 30px;
+                    height: 15px;
+                    object-fit: contain;
+                    margin: 0 auto;
+                }
+                span {
+                    @include smallUppercaseTexts();
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 10px;
                 }
             }
         }
@@ -221,33 +304,23 @@
             }
         }
     }
-    label, input, select, textarea, .listOfSelectedJobs {
+    label, input, select, textarea {
         @include transition();
         display: block;
         width: 100%;
     }
-    input, select, textarea, .listOfSelectedJobs {
-        background: $white;
-        border: 1px solid $lightGray;
-    }
-    .listOfSelectedJobs {
-        span {
-            @include paragrafos($tc: $placeholderText);
-        }
-        span[data-codejob] {
-            @include paragrafos();
-        }
-    }
     input, select, textarea {
-        @include paragrafos;
+        @include smallUppercaseTexts();
+        background: $white;
+        border: 1px solid #d0d0d0;
         @include placeholder {
-            @include paragrafos($tc: $placeholderText);
+            @include smallUppercaseTexts($tc: $black);
         }
         &.error{
             border: 1px solid $feedbackError;
         }
         &:focus {
-            border-color: $primary;
+            border-color: #bababa;
         }
     }
     input, select {
@@ -257,7 +330,7 @@
     }
     select {
         &:invalid {
-            color: $placeholderText;
+            color: $black;
         }
     }
     textarea {
@@ -269,9 +342,8 @@
         resize: vertical;
     }
     label {
+        @include smallUppercaseTexts();
         display: block;
-        margin-bottom: 5px;
-        font-size: 14px;
         &.error{
             font-size: 12px;
             color: $feedbackError;
@@ -814,7 +886,7 @@ $c_btnIcon_maxWidth: 220px;
     display: block;
     li {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         &:last-of-type {
             margin-bottom: 0;
         }
@@ -838,7 +910,7 @@ $c_btnIcon_maxWidth: 220px;
         }
         .caption {
             @include transition();
-            @include paragrafos();
+            @include smallUppercaseTexts();
             font-style: normal;
         }
         &:hover {
@@ -1274,4 +1346,7 @@ $c_btnIcon_maxWidth: 220px;
             }
         }
     }
+}
+.c-mapBox {
+    border: 10px solid #eaeaeb;
 }
