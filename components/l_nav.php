@@ -66,12 +66,12 @@
 
 		<!-- Se for outra página -->
 		<li class="innerPageLink"><a href="#">Home</a></li>
-		<li class="innerPageLink"><a href="#">Empresa</a></li>
+		<li class="innerPageLink"><a href="institucional">Empresa</a></li>
 		<li class="innerPageLink"><a href="#">Serviços</a></li>
 		<li class="innerPageLink"><a href="#">O Grupo</a></li>
 		<li class="innerPageLink"><a href="#contato" class="js-openModal">Contato</a></li>
 	</ul>
 	<div class="l-nav__followSecure">
-		<a href="#"><strong>Acompanhe</strong> seu seguro</a>
+		<a href="acompanhe"><strong>Acompanhe</strong> seu seguro</a>
 	</div>
 </nav>

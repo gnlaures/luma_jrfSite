@@ -1868,6 +1868,48 @@ $c_btnIcon_maxWidth: 220px;
 		margin-bottom: 10px;
 	}
 }
+.s-follow {
+	padding: 100px 0;
+	h1 {
+		@include titles($tc: $white);
+		display: block;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.c-simpleForm {
+		width: 100%;
+		max-width: 410px;
+		padding: 60px 50px;
+		background: #2e2e32;
+		margin: 0 auto;
+		h2 {
+			margin-bottom: 15px;
+		}
+		h2, .liLink a {
+			@include opacity(0.22);
+			@include letterSpacing(40);
+			font-size: 14px;
+			text-align: center;
+			color: $white;
+			text-transform: uppercase;
+		}
+		.liBtn {
+			.c-btn {
+				max-width: 100%;
+			}
+		}
+		.liLink {
+			margin: 10px 0;
+			a {
+				@include opacity(0.4);
+				text-align: left;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
 
 // #
 #page__home {
