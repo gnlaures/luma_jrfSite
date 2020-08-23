@@ -53,10 +53,10 @@
 			$title_page = 'Servicçs - '.$title;
 			break;
 
-		
-		case 'contato':
-			$file = 'page_contato.php';
-			$title_page = 'Contato - '.$title;
+
+		case 'grupo':
+			$file = 'page_grupo.php';
+			$title_page = 'Grupo - '.$title;
 			break;
 		
 		default :

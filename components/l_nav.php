@@ -61,14 +61,14 @@
 
 	<ul class="l-nav__links">
 		<!-- Se for home -->
-		<li><a href="#"><strong>Atendimento </strong>24 Horas</a></li>
+		<li><a href="atendimento"><strong>Atendimento </strong>24 Horas</a></li>
 		<li><a href="#contato" class="js-openModal">Contato</a></li>
 
 		<!-- Se for outra página -->
-		<li class="innerPageLink"><a href="#">Home</a></li>
+		<li class="innerPageLink"><a href="home">Home</a></li>
 		<li class="innerPageLink"><a href="institucional">Empresa</a></li>
-		<li class="innerPageLink"><a href="#">Serviços</a></li>
-		<li class="innerPageLink"><a href="#">O Grupo</a></li>
+		<li class="innerPageLink"><a href="servicos">Serviços</a></li>
+		<li class="innerPageLink"><a href="grupo">O Grupo</a></li>
 		<li class="innerPageLink"><a href="#contato" class="js-openModal">Contato</a></li>
 	</ul>
 	<div class="l-nav__followSecure">

@@ -1,15 +1,15 @@
-<?php $h1 = 'Atendimento 24hrs'; include('components/l_headerInner.php'); ?>
 <main id="page__contato">
     <section class="s-support">
 		<div class="u-containerBig">
+			<h1><strong>Atendimento </strong>24 Horas</h1>
 			<ul class="s-support__mainList">
-				<li>
+				<li class="u-fw30">
 					<div class="s-support__intro">
-						<i>icon</i>
+						<i><img src="media/img/icons/icon_atendimento.svg" alt="Encontre ao lado as informações úteis  das seguradoras para suporte 24 horas"></i>
 						<p>Encontre ao lado as informações úteis  das seguradoras para suporte 24 horas</p>
 					</div>
 				</li>
-				<li>
+				<li class="u-fw35"">
 					<div class="s-support__search">
 						<p>escolha abaixo a sua seguradora para ter acesso as informações de assistência</p>
 						<form action="#" class="c-simpleForm">
@@ -29,10 +29,10 @@
 						</form>
 					</div>
 				</li>
-				<li>
+				<li class="u-fw35">
 					<div class="s-support__searchResult">
 						<h2>Allianz Assistência</h2>
-						<ul class="c-resultSupport">
+						<ul>
 							<li>
 								<span class="label">Acidente, pane do veículo, pedido de guincho e outros serviços:</span>
 								<span class="caption">0800 130 700</span>
