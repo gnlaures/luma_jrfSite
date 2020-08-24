@@ -1,6 +1,6 @@
 {
-    "name": "Laures",
-    "short_name": "Laures",
+    "name": "Energy Broker",
+    "short_name": "Energy Broker",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#0a1b1f",
-    "background_color": "#0a1b1f",
+    "theme_color": "#1f1f23",
+    "background_color": "#1f1f23",
     "display": "standalone"
 }

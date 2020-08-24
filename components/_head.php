@@ -42,9 +42,9 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
 	<link rel="manifest" href="media/favicon/site.webmanifest">
-	<link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#0a1b1f">
-	<meta name="msapplication-TileColor" content="#0a1b1f">
-	<meta name="theme-color" content="#0a1b1f">
+	<link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#1f1f23">
+	<meta name="msapplication-TileColor" content="#1f1f23">
+	<meta name="theme-color" content="#1f1f23">
 
 	<!-- css files -->
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
