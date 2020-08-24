@@ -1045,8 +1045,10 @@ $c_btnIcon_maxWidth: 220px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	li {
-		margin-right: 30px;
+		margin-right: 10px;
+		padding: 10px;
 		&:last-of-type {
 			margin-right: 0;
 		}
