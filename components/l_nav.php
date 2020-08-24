@@ -70,6 +70,7 @@
 		<li class="innerPageLink"><a href="servicos">Serviços</a></li>
 		<li class="innerPageLink"><a href="grupo">O Grupo</a></li>
 		<li class="innerPageLink"><a href="#contato" class="js-openModal">Contato</a></li>
+		<li class="u-last"><a href="atendimento"><strong>Atendimento </strong>24 Horas</a></li>
 	</ul>
 	<div class="l-nav__followSecure">
 		<a href="acompanhe"><strong>Acompanhe</strong> seu seguro</a>

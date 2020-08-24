@@ -1489,6 +1489,18 @@ $c_btnIcon_maxWidth: 220px;
 					}
 				}
 			}
+			&.u-last {
+				justify-self: flex-end;
+				margin-left: auto;
+				margin-right: 15px;
+				a {
+					@include transition();
+					@include opacity(0.3);
+					&:hover {
+						@include opacity(1);
+					}
+				}
+			}
 		}
 	}
 	&__followSecure {
