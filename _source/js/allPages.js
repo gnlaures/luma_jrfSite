@@ -42,6 +42,23 @@ if ($('.splide__insuranceQuote').length) {
         autoHeight: false,
     } ).mount();
 }
+if ($('.swiper__servicesTabs').length) {
+    var swiper__servicesTabs = new Swiper('.swiper__servicesTabs', {
+        speed: 400,
+        spaceBetween: 10,
+        autoHeight: true,
+        hashNavigation: {
+            replaceState: true,
+            watchState: true,
+        },
+        allowTouchMove: false,
+    });
+    $(window).on('load', function() {
+        setTimeout(function(){
+            swiper__servicesTabs.updateAutoHeight();
+        }, 500);
+    });
+}
 
 // modal
 if ($('.l-modal').length) {
@@ -62,7 +79,6 @@ if ($('.l-modal').length) {
     $('.l-modal__close').on('click', function() {closeModal()});
 }
 
-
 // nav
 if ($('.l-nav').length) {
     // sub menus
@@ -73,5 +89,13 @@ if ($('.l-nav').length) {
     $('.c-hamburguer').on('click', function() {
         $(this).toggleClass('is-active');
         $('.l-nav__contentHero').toggleClass('is-active');
+    });
+}
+
+// services
+if ($('.s-services').length) {
+    $('.s-services__head a').on('click', function(e) {
+        $('.s-services__head li').removeClass('is-active');
+        $(this).closest('li').addClass('is-active');
     });
 }

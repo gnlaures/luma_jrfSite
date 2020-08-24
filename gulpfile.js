@@ -41,6 +41,7 @@ var jsLibraries__files = [
     'libraries/fancybox/jquery.fancybox.min.js',
     //'libraries/instafeed/instafeed.js',
     'libraries/splide/splide.min.js',
+    'libraries/swiper/swiper.min.js',
     'libraries/aos/aos.js',
     //'libraries/enllax/enllax.min.js',
     //'libraries/plyr/plyr.js',
@@ -60,6 +61,7 @@ var cssLibraries__files = [
     'libraries/splide/splide.min.css',
     'libraries/splide/splide-skyblue.min.css',
     'libraries/aos/aos.css',
+    'libraries/swiper/swiper.min.css',
     //'libraries/plyr/plyr.css',
 ];
 gulp.task('cssLibraries', function(done) {
