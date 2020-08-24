@@ -23,9 +23,9 @@
 			$home = true;
 			break;
 			
-		case 'componentslist':
-			$file = 'page_components.php';
-			$title_page = 'Components - '.$title;
+		case 'grupo':
+			$file = 'page_grupo.php';
+			$title_page = 'O Grupo - '.$title;
 			break;
 		
 		case 'institucional':
