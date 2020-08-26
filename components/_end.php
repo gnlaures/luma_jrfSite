@@ -1,5 +1,5 @@
-	<div class="l-modal__mask"></div>
-	<div class="l-modal l-modal__contact" id="contato">
+	<div class="l-modal__mask" style="display: none"></div>
+	<div class="l-modal l-modal__contact" style="display: none" id="contato">
 		<div class="l-modal__close">
 			<img src="media/img/icons/icon_x.svg" alt="">
 		</div>

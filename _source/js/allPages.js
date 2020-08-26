@@ -62,6 +62,12 @@ if ($('.swiper__servicesTabs').length) {
 
 // modal
 if ($('.l-modal').length) {
+    $(window).on('load', function () {
+        setTimeout(function(){
+            $('.l-modal').removeAttr('style');
+            $('.l-modal__mask').removeAttr('style');
+        }, 50);
+    });
     $('.js-openModal').on('click', function(e) {
         e.preventDefault();
         var modalDestiny = $(this).attr('href');
