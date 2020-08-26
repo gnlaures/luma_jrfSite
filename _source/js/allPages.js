@@ -28,7 +28,7 @@ if ($('.splide__homePresentation').length) {
 }
 if ($('.splide__testimonials').length) {
     var splide__testimonials = new Splide('.splide__testimonials', {
-        type  : 'loop',
+        type  : 'fade',
         rewind: true,
         arrows: false,
         autoplay: true,
