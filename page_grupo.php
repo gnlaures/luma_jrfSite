@@ -26,10 +26,10 @@
 				<h2>Outras empresas do grupo</h2>
 			</div>
 			<ul class="s-groupCompanies__list">
-				<li><img src="media/img/content/partner_eurojob.png" alt="EuroJob"></li>
-				<li><img src="media/img/content/partner_energy.png" alt="Energy Services"></li>
-				<li><img src="media/img/content/partner_energy3.png" alt="Energy Motors"></li>
-				<li><img src="media/img/content/partner_energy2.png" alt="Energy Solutions"></li>
+				<li><a href="https://www.eurojob.com.br/" target="_blank" title="EuroJob"><img src="media/img/content/partner_eurojob.png" alt="EuroJob"></a></li>
+				<li><a href="https://www.energyservices.com.br" target="_blank" title="Energy Services"><img src="media/img/content/partner_energy.png" alt="Energy Services"></a></li>
+				<li><a href="http://www.energymotors.com.br" target="_blank" title="Energy Motors"><img src="media/img/content/partner_energy3.png" alt="Energy Motors"></a></li>
+				<li><a href="https://www.energysolutions.com.br" target="_blank" title="Energy Solutions"><img src="media/img/content/partner_energy2.png" alt="Energy Solutions"></a></li>
 			</ul>
 		</div>
 	</section>

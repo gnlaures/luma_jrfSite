@@ -28,19 +28,19 @@
 				</form>
 				<ul class="c-infosContato">
 					<li>
-						<a href="#">
-							<span class="caption">(48) 999.999.999</span>
+						<a href="tel:551141342000">
+							<span class="caption">+55 11 4134-2000</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<span class="caption">contato@dominio.com.br</span>
+							<span class="caption">CONTATO@JRFENERGYBROKERS.COM.BR</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<address class="caption">
-								Av. Getúlio Vargas, 153 - Centro, Criciúma - SC, 88801-500
+								AL. RIO NEGRO, 500 - 13º ANDAR - ED. WEST TOWER - TORRE ALPHAVILLE - BARUERI - SP - BRASIL - 06454-000
 							</address>
 						</a>
 					</li>

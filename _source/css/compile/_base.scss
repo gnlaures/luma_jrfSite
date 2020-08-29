@@ -443,7 +443,7 @@ $c_btn_maxWidth: 220px;
 $c_btnIcon_heightDefault: 42px;
 $c_btnIcon_heightSmall: 34px;
 $c_btnIcon_maxWidth: 220px;
-.c-btn {
+.c-btn, .wpcf7-submit {
 	@include transition();
 	position: relative;
 	overflow: hidden;
@@ -1169,6 +1169,20 @@ $c_btnIcon_maxWidth: 220px;
 		position: relative;
 		cursor: pointer;
 		padding-left: 50px;
+		padding-right: 25px;
+		&:after {
+			@include transition();
+			content: '';
+			display: block;
+			position: absolute;
+			top: 8px;
+			right: 10px;
+			width: 10px;
+			height: 6px;
+			background: url(#{$media_assets}caret-down-white.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
 		> * {
 			@include transition();
 			color: $white;
@@ -1247,6 +1261,9 @@ $c_btnIcon_maxWidth: 220px;
 	
 	&.is-active {
 		.c-toggleList__header {
+			&:after {
+				@include transforms(rotate(180deg), center);
+			}
 		}
 		.c-toggleList__content {
 			@include u-showElement;
@@ -1786,7 +1803,7 @@ $c_btnIcon_maxWidth: 220px;
 .s-tagline {
 	display: block;
 	width: 100%;
-	margin-top: -100px;
+	margin-top: 0;
 	padding-bottom: 50px;
 	p {
 		@include opacity(0.4);
@@ -2138,13 +2155,29 @@ $c_btnIcon_maxWidth: 220px;
 }
 .s-group {
 	padding: 100px 0;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 1px;
+		background: red;
+	}
 	h1 {
 		@include titles($tc: $white);
 		margin-bottom: 30px;
+		line-height: 1;
 	}
 	p {
 		@include opacity(0.5);
 		@include paragrafos();
+	}
+	.u-containerFlex {
+		align-items: center;
 	}
 	&__intro {
 		@include flexWidth(320px);

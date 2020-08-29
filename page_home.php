@@ -35,7 +35,7 @@
 				<p>deixe a energy brokers cuidar dos seus bens, possuímos consultores especializados para tirar todas as suas dúvidas</p>
 				<a href="#" class="c-btn --white">Faça uma simulação</a>
 			</div>
-			<div class="splideTestimonialsHero">
+			<div class="splideTestimonialsHero u-dnone">
 				<div class="splide__testimonials">
 					<div class="splide__track">
 						<ul class="splide__list u-dflex">
@@ -65,12 +65,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-tagline">
+	<section class="s-tagline u-dnone">
 		<div class="u-container">
 			<p>Algumas marcas que confiaram na experiência e no atendimento premium oferecido pela energy brokers</p>
 		</div>
 	</section>
-	<section class="s-clients">
+	<section class="s-clients u-dnone">
 		<div class="u-containerBig">
 			<ul class="c-listClients">
 				<li><a href="#"><img src="media/img/content/partner_banco.png" alt="Banco Votorantim"></a></li>

@@ -9,6 +9,18 @@
 	</div>
 	<div class="l-nav__contentHero">
 		<div class="l-nav__menu">
+			<div class="c-toggleList is-active u-dnone">
+				<div class="c-toggleList__content">
+					<ul>
+						<li><a href="home">Home</a></li>
+						<li><a href="institucional">Empresa</a></li>
+						<li><a href="servicos">Seguros</a></li>
+						<li><a href="grupo">O Grupo</a></li>
+						<li><a href="#contato" class="js-openModal">Contato</a></li>
+						<li><a href="atendimento"><strong>Atendimento </strong>24 Horas</a></li>
+					</ul>
+				</div>
+			</div>
 			<div class="c-toggleList">
 				<div class="c-toggleList__header">
 					<span>Para sua empresa</span>
@@ -73,6 +85,6 @@
 		<li class="u-last"><a href="atendimento"><strong>Atendimento </strong>24 Horas</a></li>
 	</ul>
 	<div class="l-nav__followSecure">
-		<a href="acompanhe"><strong>Acompanhe</strong> seu seguro</a>
+		<a href="acompanhe"><strong>Simule</strong> seu seguro</a>
 	</div>
 </nav>
