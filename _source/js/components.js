@@ -97,7 +97,7 @@ if ($('.c-tabHorizontal').length) {
 }
 if ($('.c-toggleList').length) {
     $('.c-toggleList__header').on('click', function() {
-        $(this).parent().toggleClass('is-active');
+        $(this).closest('.c-toggleList').toggleClass('is-active');
     });
 }
 
@@ -129,6 +129,7 @@ if ($('.c-subMenu').length) {
 
     // open
     propsSubMenu.primary.on('click', function(e) {
+        console.log('teste');
         e.preventDefault();
         if ($(this).parent('.c-subMenu').hasClass('is-active')) {
             $(this).parent('.c-subMenu').removeClass('is-active');

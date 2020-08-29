@@ -1,16 +1,92 @@
 // l-nav
-@media screen and (max-width: 1050px) {
-    .l-nav__menu {
-        .c-toggleList.u-dnone {
-            display: block !important;
+@media screen and (max-width: 1040px) {
+    .l-nav {
+        .c-hamburguer {
+            display: flex !important;
         }
-        .c-toggleList {
-            border-bottom: 1px solid #262626;
-            padding-bottom: 10px;
-            &:last-of-type {
-                padding-bottom: 0;
-                margin-bottom: 0;
+        .c-subMenu {
+            .c-subMenu__mask {
+                display: none !important;
+            }
+            > .c-subMenu__call {
+                text-align: left;
+                &:after {
+                    @include transforms(translateY(50%), center);
+                    left: inherit;
+                    right: 20px;
+                    bottom: 50%;
+                }
+            }
+            > .c-subMenu__content {
+                overflow-y: hidden;
+                width: 100%;
+                max-height: 0;
+                position: relative;
+                top: 0;
+                padding: 0 10px;
+            }
+        
+            &.is-active {
+                //background: blue;
+                border-bottom: 1px solid #38383b;
+                margin-bottom: 10px;
+                > .c-subMenu__call {
+                    font-weight: $fwMedium;
+                    &:after {
+                        @include transforms(translateY(50%) rotate(180deg), center);
+                    }
+                }
+                > .c-subMenu__content {
+                    overflow-y: auto;
+                    top: 0;
+                    padding: 0 0 10px 0;
+                    max-height: 500px;
+                    > ul li {
+                        margin-bottom: 0;
+                        a {
+                            padding-left: 60px;
+                        }
+                    }
+                }
+            }
+        
+            .c-subMenu {
+                //background: orange;
                 border-bottom: 0;
+                margin-bottom: 0;
+                .c-subMenu__call {
+                    &:after {
+                        right: 10px;
+                    }
+                }
+                .c-subMenu__content {
+                    padding-bottom: 0;
+                    li {
+                        a {
+                            padding-left: 70px !important;
+                        }
+                    }
+                }
+                
+                &.is-active {
+                    .c-subMenu__content {
+                        border-bottom: 0;
+                    }
+                }
+                
+                .c-subMenu {
+                    //background: pink;
+                    border-bottom: 0;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    .c-subMenu__content {
+                        li {
+                            a {
+                                padding-left: 80px !important;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
