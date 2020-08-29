@@ -2,7 +2,7 @@
     <section class="s-group">
 		<div class="u-containerBig u-containerFlex">
 			<div class="s-group__intro">
-				<h1>a empresa</h1>
+				<h1>O grupo</h1>
 				<p>A JRF Energy Brokers pertence à Energy Group, uma união de empresas que integram-se com serviços de seguro, recursos humanos e veículos, áreas acessórias às operações principais dos clientes.</p>
 				<p>O grupo através de uma estrutura integrada e totalmente orientada ao cliente, alcança o objetivo de excelência em servi-los, integrando procedimentos e informações para conseguir a resolução dos problemas da forma mais eficiente e satisfatória.</p>
 			</div>

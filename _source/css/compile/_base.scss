@@ -552,7 +552,6 @@ $c_btnIcon_maxWidth: 220px;
 }
 .c-btnWithIcon {
 	@include transition();
-	@include roundedAll();
 	position: relative;
 	overflow: hidden;
 	min-width: 130px;
@@ -565,7 +564,7 @@ $c_btnIcon_maxWidth: 220px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	i {
 		display: flex;
 		align-items: center;
@@ -581,10 +580,11 @@ $c_btnIcon_maxWidth: 220px;
 		}
 	}
 	span {
+		@include letterSpacing(100);
 		@include transition();
 		text-transform: uppercase;
-		font-size: 16px;
-		font-weight: $fwRegular;
+		font-size: 11px;
+		font-weight: $fwMedium;
 		white-space: nowrap;
 		padding-left: 10px;
 	}
@@ -637,7 +637,7 @@ $c_btnIcon_maxWidth: 220px;
 	}
 	// stroke btns
 	&.--stroke {
-		border: 2px solid;
+		border: 1px solid;
 		&.--primary {
 			background: transparent;
 			border-color: $primary;
@@ -689,6 +689,35 @@ $c_btnIcon_maxWidth: 220px;
 				}
 				span {
 					color: $white;
+				}
+			}
+		}
+		&.--white {
+			@include opacity(0.8);
+			background: transparent;
+			border-color: $white;
+			i {
+				svg {
+					path {
+						fill: $white;
+					}
+				}
+			}
+			span {
+				color: $white;
+			}
+			&:hover {
+				@include opacity(1);
+				background: $white;
+				i {
+					svg {
+						path {
+							fill: $primary;
+						}
+					}
+				}
+				span {
+					color: $primary;
 				}
 			}
 		}
